@@ -48,6 +48,8 @@ const container =
 document.getElementById("postsContainer");
 
 container.innerHTML = "";
+document.getElementById("totalPosts").textContent =
+posts.length;
 
 posts.forEach(post => {
 
@@ -96,6 +98,8 @@ Eliminar
 }
 
 renderPosts();
+document.getElementById("totalPosts").textContent =
+posts.length;
 function deletePost(id){
 
 posts = posts.filter(post =>

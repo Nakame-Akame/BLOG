@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Mi Blog</title>
 
@@ -12,6 +17,7 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
+
 </head>
 
 <body>
@@ -21,8 +27,11 @@
   <nav class="navbar">
 
     <div class="logo">
+
       <i class="fa-solid fa-book"></i>
-      MiBlog
+
+      <span>MiBlog</span>
+
     </div>
 
     <div class="nav-buttons">
@@ -43,15 +52,55 @@
 
   <section class="hero">
 
-    <div class="hero-content">
+    <div class="hero-overlay">
 
-      <h1>
-        Comparte tus ideas con el mundo 🚀
-      </h1>
+      <div class="hero-content">
 
-      <p>
-        Crea publicaciones increíbles en tu blog personal.
-      </p>
+        <h1>
+          Comparte tus ideas con el mundo 🚀
+        </h1>
+
+        <p>
+          Crea publicaciones modernas y administra tu blog personal.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DASHBOARD -->
+
+  <section class="dashboard">
+
+    <div class="stat-card">
+
+      <i class="fa-solid fa-newspaper"></i>
+
+      <h2 id="totalPosts">0</h2>
+
+      <p>Publicaciones</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <i class="fa-solid fa-user"></i>
+
+      <h2>1</h2>
+
+      <p>Usuario</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <i class="fa-solid fa-eye"></i>
+
+      <h2>100+</h2>
+
+      <p>Visitas</p>
 
     </div>
 
@@ -59,21 +108,21 @@
 
   <!-- FORM -->
 
-  <section class="form-section">
+  <section class="form-container">
 
-    <h2>Nueva publicación</h2>
+    <h2>Nueva Publicación</h2>
 
     <form id="postForm">
 
       <input
       type="text"
       id="title"
-      placeholder="Título"
+      placeholder="Título de la publicación"
       >
 
       <textarea
       id="content"
-      placeholder="Contenido"
+      placeholder="Escribe el contenido..."
       ></textarea>
 
       <button type="submit">
@@ -86,13 +135,16 @@
 
   <!-- POSTS -->
 
-  <section>
+  <section class="posts-section">
 
     <h2 class="section-title">
-      Publicaciones recientes
+
+      Últimas publicaciones
+
     </h2>
 
-    <div id="postsContainer"
+    <div
+    id="postsContainer"
     class="posts-grid"></div>
 
   </section>
