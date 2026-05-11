@@ -55,6 +55,13 @@ container.innerHTML += `
 
 <div class="post-card">
 
+<img
+class="post-image"
+src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200"
+>
+
+<div class="post-content">
+
 <h3>${post.title}</h3>
 
 <p>${post.content}</p>
@@ -63,20 +70,29 @@ container.innerHTML += `
 
 <br><br>
 
-<button onclick="editPost(${post.id})">
+<div class="post-buttons">
+
+<button
+class="edit-btn"
+onclick="editPost(${post.id})">
 Editar
 </button>
 
-<button onclick="deletePost(${post.id})">
+<button
+class="delete-btn"
+onclick="deletePost(${post.id})">
 Eliminar
 </button>
+
+</div>
+
+</div>
 
 </div>
 
 `;
 
 });
-
 }
 
 renderPosts();
