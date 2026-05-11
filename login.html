@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
   <meta charset="UTF-8">
+
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+  >
+
   <title>Login</title>
 
   <link rel="stylesheet" href="css/style.css">
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
 </head>
-<body>
 
-<h1>Login</h1>
+<body class="auth-body">
 
-<form id="loginForm">
+  <div class="auth-container">
 
-<input
-type="text"
-id="loginUser"
-placeholder="Usuario"
->
+    <div class="auth-card">
 
-<input
-type="password"
-id="loginPass"
-placeholder="Contraseña"
->
+      <div class="auth-header">
 
-<button type="submit">
-Ingresar
-</button>
+        <i class="fa-solid fa-book"></i>
 
-</form>
+        <h1>MiBlog</h1>
 
-<a href="register.html">
-Crear cuenta
-</a>
+        <p>
+          Inicia sesión para continuar
+        </p>
 
-<script src="js/auth.js"></script>
+      </div>
+
+      <form id="loginForm">
+
+        <div class="input-group">
+
+          <i class="fa-solid fa-user"></i>
+
+          <input
+          type="text"
+          id="loginUser"
+          placeholder="Usuario"
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <i class="fa-solid fa-lock"></i>
+
+          <input
+          type="password"
+          id="loginPass"
+          placeholder="Contraseña"
+          >
+
+        </div>
+
+        <button type="submit">
+          Ingresar
+        </button>
+
+      </form>
+
+      <p class="auth-link">
+
+        ¿No tienes cuenta?
+
+        <a href="register.html">
+          Regístrate
+        </a>
+
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="js/auth.js"></script>
 
 </body>
 </html>
